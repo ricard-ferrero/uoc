@@ -15,3 +15,12 @@
 **Maquinari:** La part física de l'ordinador (components electrònics) que permet l'execusió d'instruccions (càlculs) del _programari_.
 
 ## 1.2. El desenvolupament de programari
+>**Desenvolupament de programari** l'acte de produir o crear programari.
+
+**Codi màquina:** llista d'instruccions que l'ordinador pot entendre i executar directament. El codi màquina no és llegible per a les persones, i les instruccions són poques i molt senzilles com per a utilitzar-les per construir programes complexos d'una manera clara per a l'home.
+
+**Llenguatge de programació:** eina que s'utilitzar per programar que permet escriure instruccions a un nivell d'abstracció més elevat, amb instruccions compostes i més complexes. Aquest desrpés es transforma en codi màquina per a ser exectutat.
+
+>**Codi font:** la manera llegible en què s'escriu el programari
+------------------------------------------------
+L'objectiu del programari és cobrir unes necessitats en concret, ja siguin d'un client (o organització), un determinat grup d'usuaris o per a ús personal; pot ser venut o simplement oferit gratuïtament.
