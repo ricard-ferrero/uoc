@@ -24,3 +24,14 @@
 >**Codi font:** la manera llegible en què s'escriu el programari
 ------------------------------------------------
 L'objectiu del programari és cobrir unes necessitats en concret, ja siguin d'un client (o organització), un determinat grup d'usuaris o per a ús personal; pot ser venut o simplement oferit gratuïtament.
+
+_Desenvolupament del programari_ és un concepte molt més ampli a simplement programar (creació de codi font), ja que també recull moltes altres activitats, com per exemple:
+- estudi i documentació de les necessitats dels usuaris
+- manteniment del programari
+- coordinació del treball en equip
+- redacció de manuals/ajudes a usuaris
+- etc...
+
+Com que la qualitat obtinguda i el cost del desenvolupament són importants, organitzacions i empreses han convertit aquestes activitats en una _enginyeria_.
+
+## 1.3. L'àmbit de l'enginyeria del programari
