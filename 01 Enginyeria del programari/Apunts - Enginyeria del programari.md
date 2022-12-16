@@ -1,4 +1,5 @@
-# Enginyeria del programari <br> Mòdul 1: Introducció a l'enginyeria del programari
+<h1 style="font-weight: bold; font-size: 3em"> Enginyeria del programari</h1>
+<h1 style="font-weight: bold;">Mòdul 1: Introducció a l'enginyeria del programari</h1>
 
 # 1. Què és l'enginyeria del programari?
 **Enginyeria:** (_interpretació personal_) acció d'utilitzar els coneixements científics adequats per a conseguir solucionar problemes a trabés de la tecnologia.
@@ -35,3 +36,13 @@ _Desenvolupament del programari_ és un concepte molt més ampli a simplement pr
 Com que la qualitat obtinguda i el cost del desenvolupament són importants, organitzacions i empreses han convertit aquestes activitats en una _enginyeria_.
 
 ## 1.3. L'àmbit de l'enginyeria del programari
+Mentres abans el programari es construia per a fer càlculs matemàtics (_computadra_), avui en dia el és una eina extesa a tot arreu (xarxes socials, sistemes d'informació, rellotges de polsera...). Per tant existeixen diferents tipus de programari ergo diferents maneres de desenvolupar-lo.
+
+**Classificació de Roger Pressman (2005):**
+- Programari de sistemes
+- Programari d'aplicació
+- Programari científic i d'enginyeria
+- Programari encastat
+- Programari de línies de productes
+- Aplicacions web
+- Programari d'intel·ligència artificial
