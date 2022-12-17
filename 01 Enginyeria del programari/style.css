@@ -1,0 +1,17 @@
+titol-assignatura {
+    //font-weight: bold;
+    font-size: 5em;
+    //font-family: 'Times New Roman', Times, serif;
+}
+
+titol-modul {
+    //font-weight: bold;
+    font-size: 3em;
+}
+
+.aclaracio {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.9em;
+}
