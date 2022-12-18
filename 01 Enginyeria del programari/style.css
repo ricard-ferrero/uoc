@@ -1,11 +1,13 @@
-titol-assignatura {
+.titol-assignatura {
     font-size: 5em;
     font-family: serif;
+    border-bottom: none;
 }
 
-titol-modul {
+.titol-modul {
     font-size: 3em;
     font-family: serif;
+    border-bottom: none;
 }
 
 .aclaracio {

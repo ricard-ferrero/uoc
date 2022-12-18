@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="style.css">
 
-<titol-assignatura> Enginyeria del programari</titol-assignatura>
+<h1 class="titol-assignatura"> Enginyeria del programari</h1>
 
-<titol-modul>Mòdul 1: Introducció a l'enginyeria del programari</titol-modul>
+<h1 class="titol-modul">Mòdul 1: Introducció a l'enginyeria del programari</h1>
 
 # 1. Què és l'enginyeria del programari?
 
