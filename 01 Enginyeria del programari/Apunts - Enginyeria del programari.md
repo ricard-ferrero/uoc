@@ -67,4 +67,3 @@ El programari per a sistemes d'informació gestiona certa informació mitjantça
 <p class="aclaracio">
 Un sistema d'informació no és un sistema informàtic. Aquest poden ser, per exemple, un conjunt d'albarans escrits a mà, o també pot estar format per un sistema informàtic de gestió de comandes.
 </p>
-

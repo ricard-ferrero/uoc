@@ -1,12 +1,11 @@
 titol-assignatura {
-    //font-weight: bold;
     font-size: 5em;
-    //font-family: 'Times New Roman', Times, serif;
+    font-family: serif;
 }
 
 titol-modul {
-    //font-weight: bold;
     font-size: 3em;
+    font-family: serif;
 }
 
 .aclaracio {
