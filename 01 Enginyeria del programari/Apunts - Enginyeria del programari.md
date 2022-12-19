@@ -6,11 +6,15 @@
 
 # 1. Què és l'enginyeria del programari?
 
+<div class="aclaracio">
+
 **Enginyeria:** (_interpretació personal_) acció d'utilitzar els coneixements científics adequats per a conseguir solucionar problemes a trabés de la tecnologia.
 
 >L'aplicació pràctica de la ciència i la tecnologia - [Viquipèdia](https://ca.wikipedia.org/wiki/Enginyeria)
 
 >Art d'aplicar els coneixements científics a la invenció, al perfeccionament o a la utilització de les tècniques en totes llurs determinacions dins el camp industrial. - [Gran Enciclopèdia Catalana](https://www.enciclopedia.cat/gran-enciclopedia-catalana/enginyeria)
+
+</div>
 
 ## 1.1. Programari i maquinari
 
@@ -67,3 +71,31 @@ El programari per a sistemes d'informació gestiona certa informació mitjantça
 <p class="aclaracio">
 Un sistema d'informació no és un sistema informàtic. Aquest poden ser, per exemple, un conjunt d'albarans escrits a mà, o també pot estar format per un sistema informàtic de gestió de comandes.
 </p>
+
+## 1.4. Què és l'enginyeria del programari?
+
+> **Enginyeria**: l'aplicació d'un enfocament sistemàtic, disciplinat i quantificable a les estructures, màquines, productes, sistemes o processos per a obtenir un resultat esperat - IEEE
+
+> **Engiyeria del programari**: l'aplicació d'un enfocament sistemàtic, disciplinat i quantificable al desnvolupament, operació i manteniment del programari; és a dir, l'aplicació de l'enginyeria al programari - IEEE
+
+**Desenvolupament**: procés que porta a la producció del programari.
+
+**Operació**: execució del programari dins del seu entorn d'execució per tal de dur a terme la seva funció.
+
+**Manteniment**: modificació del producte de programari per tal de corregir-ne els errors o bé adaptar-lo a noves necessitats.
+
+En l'enginyeria del programari s'han de dur a terme totes aquestes activitats i així poder _mesurar, quantificar i analitzar_ els diferents processos relacionats amb la vida del producte de programari.
+
+Això ens permet extreure conclusions aplicables a futurs projectes de programari. _Quins recursos són necessaris per un nou programari? Quant de temps caldria per afegir una nova funcionalitat? Quins riscos podem trobar?_
+
+## 1.5. Història de l'enginyeria del programari
+
+En l'inici del programari es feia com un producte gratuït inclòs en la compra del maquinari i fabricat pels mateixos fabricants del maquinari. No hi havia el concepte de _programari empaquetat_ com aproducte.
+
+**No** hi havia planificació ni predicció de costos i temps. Però **sí** hi havia tècniques de reutilització (programació modular).
+
+En el comitè científic de l'OTAN, octubre 1968, va definir formalment el terme _enginyeria del programari_.
+
+-------------------------------------------------------
+
+En la conferència de l'OTAN es va parlar de la _crisi del programari_: la dificultat d'escriure programari correcte, entenedor i verificable, de manera que els projectes tenien més elevats de
