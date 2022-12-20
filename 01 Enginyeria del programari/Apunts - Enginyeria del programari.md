@@ -98,4 +98,14 @@ En el comitè científic de l'OTAN, octubre 1968, va definir formalment el terme
 
 -------------------------------------------------------
 
-En la conferència de l'OTAN es va parlar de la _crisi del programari_: la dificultat d'escriure programari correcte, entenedor i verificable, de manera que els projectes tenien més elevats de
+En la conferència de l'OTAN es va parlar de la _crisi del programari_: la dificultat d'escriure programari correcte, entenedor i verificable, i que tenia com a conseqüencia la dificultat de planificar els costos del projecte, els plaços de termini, problemes amb la qualitat, etc...
+
+**Informe Chaos** (Standish Group, 1995) estudi sobre desenvolupament de programari a EUA, i exposava que:
+
+- 90% de projectes no complien amb els requisits de temps, cost o qualitat
+- 31% de projectes eren cancel·lats
+- només 16% de projectes acabaven en el temps, pressupost i abast planificats
+
+Durant dècades, es va intentar solucionar la crisi del programari inventant eines, tecnologies i pràctiques. No es va poguer solucionar de manera definitiva els problemes però sí algunes millores.
+
+**"No Silver Bullet** (Fred Brooks, 1986) és un article on s'explica que no hi ha una solució única (_perfecte, màgica_) per al problema. 
