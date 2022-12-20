@@ -108,4 +108,22 @@ En la conferència de l'OTAN es va parlar de la _crisi del programari_: la dific
 
 Durant dècades, es va intentar solucionar la crisi del programari inventant eines, tecnologies i pràctiques. No es va poguer solucionar de manera definitiva els problemes però sí algunes millores.
 
-**"No Silver Bullet** (Fred Brooks, 1986) és un article on s'explica que no hi ha una solució única (_perfecte, màgica_) per al problema. 
+**"No Silver Bullet"** (Fred Brooks, 1986) és un article on s'explica que no hi ha una solució única (_perfecte, màgica_) per al problema, i per molt que s'investigui en tecnologia o gestió no es pot aconseguir gaires millores d'un ordre de magnitud en productivitat, fiabilitat o simplicitat, com a mínim en una dècada (a diferència del maquinari que es millora en dos ordres de magnitud cada dos anys).
+
+La causa de les afirmacions de Brooks era que les millores que per aquell llavors s'estaven aconseguint podien pal·liar la complexitat accidental però no la complexitat essencial (la inherent al desenvolupament de programari).
+
+Als 90' Internet va provocar un creixement molt ràpid en demanda de programari especialitzat (sobretot en la Web). Això va generar la necessitat de solucions de programari més simples, ràpides de desenvolupar i econòmiques.
+
+L'informe Chaos de 2009 mostra la següent evolució en els projectes entre 1994 i 2009:
+
+|             | 1994 | 2009 |
+| ----------: | :--: | :--: |
+| reixits     | 16%  | 32%  |
+| cancel·lats | 31%  | 24%  |
+
+Se segueix creient que no existeixen solucions màgiques i se segueixen buscant solucions. Algunes d'aquestes _que veurem en aquesta assignatura_ són:
+
+- línies de producte
+- desenvolupament guiat per models
+- patrons o metodologies àgils de desenvolupament
+
