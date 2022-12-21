@@ -22,6 +22,12 @@
 
 >Conjunt dels programes de computació, procediments, regles, documentació i dades associades que formen part de les operacions d'un sistema de còmput - IEEE
 
+<div class="aclaracio">
+
+>**IEEE** són les sigles de _Institute of Electrical and Electronics Engineers_, l'Institut d'Enginyers Elèctrics i Electrònics, una associació tècnico-professional mundial dedicada a l'estandardització, entre altres coses. És la major associació internacional sense ànims de lucre formada per professionals de les noves tecnologies, com enginyers en informàtica, enginyers elèctrics, enginyers en electrònica, enginyers en sistemes i enginyers en telecomunicació. - [Viquipèdia](https://ca.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers)
+
+</div>
+
 **Maquinari:** La part física de l'ordinador (components electrònics) que permet l'execusió d'instruccions (càlculs) del _programari_.
 
 ## 1.2. El desenvolupament de programari
@@ -96,8 +102,6 @@ En l'inici del programari es feia com un producte gratuït inclòs en la compra 
 
 En el comitè científic de l'OTAN, octubre 1968, va definir formalment el terme _enginyeria del programari_.
 
--------------------------------------------------------
-
 En la conferència de l'OTAN es va parlar de la _crisi del programari_: la dificultat d'escriure programari correcte, entenedor i verificable, i que tenia com a conseqüencia la dificultat de planificar els costos del projecte, els plaços de termini, problemes amb la qualitat, etc...
 
 **Informe Chaos** (Standish Group, 1995) estudi sobre desenvolupament de programari a EUA, i exposava que:
@@ -127,3 +131,42 @@ Se segueix creient que no existeixen solucions màgiques i se segueixen buscant 
 - desenvolupament guiat per models
 - patrons o metodologies àgils de desenvolupament
 
+## 1.6. L'enginyeria del programari comparada amb les altres enginyeries
+
+Si s'aplica l'enginyeria al desenvolupament de programari es poden aprofitar els coneixements d'altres disciplines de l'enginyeria per millorar la manera en què gestionem aquestes activitats.
+
+Així doncs s'han aplicat diferents metàfores per intentar taslladar els coneixements a la nostra disciplina. Però un dels perills de les metàfores és que, sovint, s'apliquen amb coneixements incomplets de partida, i pot portar a errors al traslladar els coneixements.
+
+<p class="aclaracio">
+No existeix un trasllat absolut de coneixements i pràctiques entre disciplines.
+</p>
+
+<div class="exemple">
+
+**Exemple**:
+
+L'arquitecta crea plànols que han d'estar llestos abans de començar la construcció. Els paletes són intercaviables (les instruccions a seguir són clares). Un cop finalitzada la feina el client pot contractar altres paletes pel manteniment.
+
+Però no es té en compte factors com: l'edifici es construeix al mateix lloc on es farà servir, mentres que el programari no; el programari de qualitat s'ha de poder fer servir en entorns diferents; el cost de fer còpies del programari és gairabé nul comparat amb el cost del disseny.
+
+</div>
+
+**Diferències destacables** entre el programari i altres productes industrials:
+
+1. **El programari és intangible**. No utilitza cap matèria prima física.
+2. **El programari no es manufactura**. Crear-ne còpies té un cost quasi nul i el resultat de les còpies sempre és idèntic a l'original.
+3. **El programari no es desgasta**. El tipus de manteniment és molt diferent ja que si una còpia falla no pot ser per desgast i per lo tant tota la resta de còpies també fallaran.
+4. **El programari queda obsolet ràpidament**. La ràpida evolució tecnològica fa que quedi obsulet en poc temps a diferència d'altres disciplines industrials. Força a desenvolupar-ho amb poc temps i poc cost.
+
+A més, cal destacar que l'enginyeria del programari és una disciplina relativament nova (comparada amb la resta d'enginyeries). L'experiència acumulada és relativament poca i aquest fet es veu agreujat per la ràpida evolució tecnològica, fonamentalment en dos eixos:
+
+- Les noves possibilitats tecnològiques fan que canviï totalment la naturalesa dels productes que estem desenvolupant (per exemple l'aparició d'interficies gràfiques, d'Internet i/o els telèfons intel·ligents).
+- L'augment de la potència de càlcul dels ordinadors provoca canvis fonamentals en les eines que es fan servir per desenvolupar programari (tant pels llenguatges i paradigmes com eines mateixes -entorns de desenvolupament, eines CASE...-)
+
+>Les **eines CASE** (_computer aided software engineering_) són les eines que ens ajuden a dur a terme les diferents activitats de l’enginyeria del programari com ara la creació de models, generació de documentació, etc.
+
+Per lo tant la majoria de coneixement queda obsolet ja que es va crear per solucionar problemes en un context diferent del que ens podem trobar avui en dia.
+
+El **programari lliure** ha transformat totalment la manera de desenvolupar i mantenir el programari i ha promogut la creació d'estàndards, la reutilització de programari i a la difusió del coneixement respecte a com ha estat desenvolupat. Aquest nivell de transparència i col·laboració no existeix en cap altra enginyeria.
+
+# 2. Organització de l'enginyeria del programari
