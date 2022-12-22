@@ -170,3 +170,17 @@ Per lo tant la majoria de coneixement queda obsolet ja que es va crear per soluc
 El **programari lliure** ha transformat totalment la manera de desenvolupar i mantenir el programari i ha promogut la creació d'estàndards, la reutilització de programari i a la difusió del coneixement respecte a com ha estat desenvolupat. Aquest nivell de transparència i col·laboració no existeix en cap altra enginyeria.
 
 # 2. Organització de l'enginyeria del programari
+
+**Mètodes de desenvolupament**: són els diferents mètodes definits que ens permet aplicar l'enginyeria a les activitats relacionades amb el programari, siguent sistemàtic, amb el desenvolupament, operació o manteniment (o una combinació de tots tres),
+
+>Un mètode descriu les característiques del procés o procediment disciplinat utilitzat en l'enginyeria d'un producte o en la prestació d'un servei - IEEE
+
+## 2.1. Organització del desenvolupament, operació i manteniment
+
+Els processos de desenvolupament, d'operació i de manteniment poden tenir similituds, però les seves diferències fan que l'organització dels processos siguin molt diferents entre ells:
+
+En el cas de l'operació les activitats són contínues, però el desenvolupament és temporal.
+
+Les activitats de l'operació són repetitives, però el desenvolupament proporciona un resultat únic (un resultat per cada procés de desenvolupament).
+
+>Mentre que el desenvolupament s'acostuma a organitzar en forma de projectes, l'operació s'organitza d'acord amb serveis.
