@@ -184,3 +184,29 @@ En el cas de l'operació les activitats són contínues, però el desenvolupamen
 Les activitats de l'operació són repetitives, però el desenvolupament proporciona un resultat únic (un resultat per cada procés de desenvolupament).
 
 >Mentre que el desenvolupament s'acostuma a organitzar en forma de projectes, l'operació s'organitza d'acord amb serveis.
+
+Molts mètodes se centren en una única activitat de les tres mencionades. En aquest temari ens centrarem en les etapes de desenvolupament i manteniment.
+
+<div class="aclaracio">
+<p class="capçal">Lectures recomenades</p>
+Si voleu aprofundir en la gestió de projectes, podeu consultar la guia PMBOK publicada pel Project Management Institute (PMI), mentre que si us interessa la gestió de l’operació del programari podeu consultar l’estàndard ITIL.
+</div>
+
+## 2.2. Organització dels projectes de desenvolupament
+
+Els diferents mètodes per al desenvolupament del programari defineixen un o més processos de desenvolupament. La descripció d'un procés inclou:
+
+- **Tasques**: quines fer i en quin ordre.
+- **Rols**: dels diferents participants, quina responsabulitat tenen i quines tasques han de dur a terme.
+- **Artefactes**: documents, programes, etc. que s'han de fer servir per cada tasca, i quins artefactes s'han de generar com a resultat.
+
+Els criteris per escollir els processos definits per un mètode es basen en el seu abast (només al desenvolupament o també altres espectes), el tipus d'organització al que va dirigit, el tipus de producte a generar, entre d'altres...
+
+## 2.3. Activitats de l'enginyeria del programari
+
+Hi ha un seguit de tasques que coincidiran en tots els projectes de desenvolupament amb independencia de com s'organitzi.
+
+**Activitat**: en aquest temari farem referència a _activitat_ com a un conjunt de tasques relacionades entre si. Les tasques són conceptes més concrets i que poden diferenciar molt entre projectes (generar un model conceptual, crear un diagrama de Gantt...), mentre que les activitats són més genèriques i coincideixen entre projectes (modlització, planificació...).
+
+## 2.3.1. Gestió del projecte
+

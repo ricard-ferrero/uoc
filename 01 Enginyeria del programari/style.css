@@ -20,3 +20,9 @@
 .exemple {
     padding-left: 1em;
 }
+
+.capçal {
+    font-weight: bold;
+    border-bottom: 1px solid;
+    padding: 0 5px;
+}
