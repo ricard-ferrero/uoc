@@ -1,11 +1,16 @@
+header {
+    font-size: 3rem;
+    text-align: center;
+}
+
 .titol-assignatura {
-    font-size: 5em;
+    font-size: 5rem;
     font-family: serif;
     border-bottom: none;
 }
 
 .titol-modul {
-    font-size: 3em;
+    font-size: 3rem;
     font-family: serif;
     border-bottom: none;
 }
@@ -14,11 +19,11 @@
     border: solid 1px;
     border-radius: 5px;
     padding: 10px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 .exemple {
-    padding-left: 1em;
+    padding-left: 1rem;
 }
 
 .capçal {

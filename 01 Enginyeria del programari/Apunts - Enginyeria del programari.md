@@ -1,8 +1,47 @@
 <link rel="stylesheet" href="style.css">
 
-<h1 class="titol-assignatura"> Enginyeria del programari</h1>
+<header>
+    <p class="capçal">Apunts</p>
+    <h1 class="titol-assignatura">Enginyeria del programari</h1>
+</header>
 
-<h1 class="titol-modul">Mòdul 1: Introducció a l'enginyeria del programari</h1>
+<div style="font-size: 0.8rem">
+
+Tot el contingut són apunts i resums del Grau universitari "Enginyeria Informàtica" cursat en la Universitat Oberta de Catalunya.
+
+Per lo tant, els textos són extractes de la documentació que ofereix la universitat en les assignatures respectives i estan complementats amb documents d'altres pàgines webs informatives, d'altres llibres o amb conclusions personals.
+
+</div>
+
+# Índex
+
+- [Mòdul 1: Introducció a l'enginyeria del programari](#modul-1)
+    1. [Què és l’enginyeria del programari?](#1-qu%C3%A8-%C3%A9s-lenginyeria-del-programari)
+    2. [Organització de l’enginyeria del programari](#2-organitzaci%C3%B3-de-lenginyeria-del-programari)
+    3. Mètodes de desenvolupament de programari
+    4. Tècniques i eines de l’enginyeria del programari
+    5. Estàndards de l’enginyeria del programari
+- Mòdul 2: Orientació a objectes
+    1. Què és l’orientació a objectes?
+    2. Classificació i abstracció
+    3. Ocultació d’informació i encapsulament
+    4. Herència i polimorfisme
+    5. Cas pràctic: un fòrum virtual
+- Mòdul 3: Requisits
+    1. Introducció als requisits
+    2. Obtenció dels requisits
+    3. Gestió de requisits
+    4. Documentació dels requisits
+    5. Casos d’ús
+- Mòdul 4: Anàlisi UML
+    1. Anàlisi orientada a objectes amb UML
+    2. Model de casos d’ús
+    3. Modelització de la interfície
+    4. Model del domini
+
+-----------------------------------------------
+
+<h1 class="titol-modul" id="modul-1">Mòdul 1: Introducció a l'enginyeria del programari</h1>
 
 # 1. Què és l'enginyeria del programari?
 
