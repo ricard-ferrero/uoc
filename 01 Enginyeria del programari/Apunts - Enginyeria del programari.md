@@ -249,3 +249,37 @@ Hi ha un seguit de tasques que coincidiran en tots els projectes de desenvolupam
 
 ## 2.3.1. Gestió del projecte
 
+>L'objectiu prinipal de la **gestió de projectes** és assegurar l'èxit del projecte
+
+La gestió del projecte no és una activitat específica del desenvolupament del programari, i per això hi ha qui considera que no forma part de l'enginyeria del programari. Però forma part del projecte de desenvolupament i, per tant, els mètodes de desenvolupament l'han de tenir en compte.
+
+Algunes tasques reslacionades amb la gestió del projecte:
+
+- **Estudi de viabilitat**. Cal comprovar si per qüestions de cost i temps el projecte de desenvolupament és la millor solució
+- **Estimació**. Temps i diners
+- **Definir clarament els objectius del projecte**. En determinaran l'èxit o el fracàs.
+- **Formar l'equip de desenvolupament**. Persones amb dedicació completa (desenvolupadors) o parcial(_stakeholders_)
+- **Establir fites**. Permeten fer-ne un seguiment del procés.
+- **Identificar riscos que puguin posar en perill el projecte**. Tant tecnològics com la resta de possibilitats (problemes legals, manca de suport de l'organització...)
+
+<div class="aclaracio">
+<p class="capçal">Stakeholder</p>
+Qualsevol persona o organització interessada, afectada o implicada en el funcionament del programari que es desenvolupa.
+</div>
+
+La gestió del projecte variarà notablement segons el mètode de desenvolupament emprat.
+
+**Podem resumir que la gestió del projecte consisteix en equilibrar tres variables**
+
+1. l'abast del projecte (què inclourà i què no)
+2. el temps (data final d'entrega)
+3. el cost (recursos humans o materials)
+
+La modificació d'una de les tres variables s'ha de comepensar modificant una de les altres dues.
+
+>**Joc de suma zero**: En teoria de jocs, un joc de suma zero descriu una situació en què el guany o la pèrdua en què incorre un dels participants es compensa exactament per les pèrdues o guanys de la resta de participants. Així doncs, si sumem totes les pèrdues i tots els guanys, el resultat final és 0.
+
+<div class="aclaracio">
+<p class="capçal">Altres variables</p>
+Wysocki (2009) afageix qualitat com a variable i distingeix entre cost (pressupost) i recursos (personal).
+</div>
