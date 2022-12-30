@@ -283,3 +283,24 @@ La modificació d'una de les tres variables s'ha de comepensar modificant una de
 <p class="capçal">Altres variables</p>
 Wysocki (2009) afageix qualitat com a variable i distingeix entre cost (pressupost) i recursos (personal).
 </div>
+
+### 2.3.2. Identificació i gestió dels requisits
+
+>Els requisits expressen les necessitats i restriccions que afecten un producte de programari que contribueix a la solució d'un problema del món real - SWEBOK (2004)
+
+Per trobar-los cal comunicació i col·laboració amb els _stakeholders_.
+
+Els requisits són el que determinen l'abast del projecte.
+
+Les principals problemàtiques que ens podem trobar durant aquesta tasca són:
+
+- **Diferències respecte a la informació amb què traballen les diferents parts**. _Stakeholders_ tenen una informació (referent al producte) i els desenvolupadors una altra (referent a la tencologia). Això pot generar perspectives diferents.
+- **Limitacions del canal utilitzat**. Cada canal té pros i contras: comunicació escrita perd el llegunatge no verbal, mentre que si és verbal es perd la capacitat de revisió.
+- **Limitacions del llenguatge utilitzat**. Llenguatge natural és propens a l'ambigüitat. Els llenguatges formals són menys expressius i necessiten que les dues parts l'entenguin.
+- **Dificultat de definir el millor sistema possible**. _Stakeholders_ poden no acabar de comunicar els requisits del millor sistema possible (condicionats per altres sistemes que coneixen o no saber altres possibilitats).
+
+<p class="aclaracio">Els problemes són generats per les complicacions durant la comunicació amb els <em>stakeholders</em>, i no pas per la naturalesa de l'enginyeria en sí.</p>
+
+Per a solucionar aquests problemes s'usen tècniques basades en retroalimentació durant l'anlàlisi de requisits.
+
+Per exemple: el prototipatge (ensenyar una versió amb aspecte similar al producte final però que no implementa la funcionalitat real) o els models (la seva utilitat està condicionada a que els _stakeholders_ entenguin lal notació).
