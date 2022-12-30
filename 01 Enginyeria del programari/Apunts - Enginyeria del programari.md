@@ -304,3 +304,15 @@ Les principals problemàtiques que ens podem trobar durant aquesta tasca són:
 Per a solucionar aquests problemes s'usen tècniques basades en retroalimentació durant l'anlàlisi de requisits.
 
 Per exemple: el prototipatge (ensenyar una versió amb aspecte similar al producte final però que no implementa la funcionalitat real) o els models (la seva utilitat està condicionada a que els _stakeholders_ entenguin lal notació).
+
+### 2.3.3. Modelització
+
+**Creació de models el sistema per desenvolupar**: facilitaran la comprensió dels requisits i el disseny del sistema.
+
+És l'equivalent a la creació de maquetes en altres disciplines, amb la diferència que en aquest cas el model és intangible (com el producte final).
+
+**UML** (_unified modeling language_) és el llenguatge més utilitzat per a creació de models de programari. Defineix tot un seguit de diagrames a partir dels quals podem elaborar els nostres models. Publicat per OMG (Object Management Group)
+
+UML no imposa cap mètode de desenvolupament, i per això s'ha adoptat a la majoria de mètodes de desenvolupament actuals. També té l'avantatge que només defineix la notació que s'ha de fer servir però no quins artefactes s'han de generar (un mateix diagrama es pot fer servir en diversos artefactes -model de domini, diagrama de classes de disseny, etc...)
+
+### 2.3.4. Construcció i proves
