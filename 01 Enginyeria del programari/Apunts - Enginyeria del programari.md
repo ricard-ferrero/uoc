@@ -345,3 +345,39 @@ El _Project Management Institute_ (associació professional que publica estànda
 
 Poden estar executades una després de l'altre, a l'hora o combinades de diferents maneres.
 
+## 2.4. Rols en l'enginyeria de programari
+
+En els projectes intervenen moltes persones, i una bona definició de rols pot ser determinant per arribar a l'èxit del projecte.
+
+Els rols que hi hauran en un mètode dependran del seu abast. No tots els mètodes tindran els mateixos rols.
+
+<div class="aclaracio"><p class="capçal">Lectura recomenada</p>
+
+**Tom DeMarco; Timothy Lister** (1999). Peopleware: productive Projects and Teams (2a. ed.). Dorset House Publishing Company.
+</div>
+
+- El cap de projectes
+- Els experts del domini
+- L'analista funcional
+- L'arquitecte
+- L'analista orgànic o analista tècnic
+- Els programadors
+- L'expert de qualitat (provador)
+- L'encarregat del desplegament
+- El responsable de producte
+- Altres rols
+
+### 2.4.1. El cap de projectes
+
+>El cap de projectes és la persona responsable d'aconseguir els objectius del projecte.
+
+És un rol no tècnic encarregat d'organitzar el projecte, coordinar l'equip i vetllar pels objectius (tant de costos com de valor generat).
+
+### 2.4.2. Els experts del domini
+
+Persones que coneixen el domini del sistema que s'està desenvolupant, els principals coneixedors dels requisits. Normalment no són tècnics sinó experts d'altres coneixements (vendes, finances, producció, etc).
+
+Aquest rol també és conegut com a "analista de negoci" (_business analyst_).
+
+### 2.4.3. L'analista funcional
+
