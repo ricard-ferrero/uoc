@@ -247,7 +247,7 @@ Hi ha un seguit de tasques que coincidiran en tots els projectes de desenvolupam
 
 **Activitat**: en aquest temari farem referència a _activitat_ com a un conjunt de tasques relacionades entre si. Les tasques són conceptes més concrets i que poden diferenciar molt entre projectes (generar un model conceptual, crear un diagrama de Gantt...), mentre que les activitats són més genèriques i coincideixen entre projectes (modlització, planificació...).
 
-## 2.3.1. Gestió del projecte
+### 2.3.1. Gestió del projecte
 
 >L'objectiu prinipal de la **gestió de projectes** és assegurar l'èxit del projecte
 
@@ -316,3 +316,32 @@ Per exemple: el prototipatge (ensenyar una versió amb aspecte similar al produc
 UML no imposa cap mètode de desenvolupament, i per això s'ha adoptat a la majoria de mètodes de desenvolupament actuals. També té l'avantatge que només defineix la notació que s'ha de fer servir però no quins artefactes s'han de generar (un mateix diagrama es pot fer servir en diversos artefactes -model de domini, diagrama de classes de disseny, etc...)
 
 ### 2.3.4. Construcció i proves
+
+Inclou l'escriptura del codi font (implementació) i la realització de proves que garanteixin que ni hi hagi errors i que el producte compleixi amb els seus requisits.
+
+Llavors podríem **desplegar** el producte: crear els arxius executables i donar-los als usuaris.
+
+### 2.3.5. Qualitat
+
+Seria una activitat que inclouria totes les etapes del desenvolupament.
+
+Per medir la qualitat necessitem, a part de els criteris d'acceptació del sistema (què necessita el projecta per dir que està finalitzat), un conjunt de mètriques per verificar si compleix amb els criteris de qualitat marcats.
+
+### 2.3.6. Manteniment reenginyeria
+
+**Manteninemt correctiu**: corregir errors detectats al programari, modificant el codi font i generant una nova versió del programa.
+
+**Manteniment evolutiu**: afegir noves funcionalitats (o adaptar les existents) per satisfer noves necessitats detectades després de la fi del desenvolupament.
+
+### 2.3.7. Activitats des del punt de vista del cicle de vida del projecte
+
+El _Project Management Institute_ (associació professional que publica estàndards de bones pràctiques en la gestió de projectes) fa una classifiació diferent, es fixa en la gestió del projecte i en quin punt del cicle de vida es du a terme cada tasca:
+
+- **Tasques d'iniciació**. Decidir si el projecte es du a terme o se substitueix per una altra solució
+- **Tasques de planificació**. Definir quines tasques fer i en quin ordre.
+- **Tasques d'execució**. Escriure els programes.
+- **Tasques de seguiment i control**.  Serveixen per detectar problemes i corregir-los, així com validar la planificació.
+- **Tasques de tancament**. Tot lo relacionat amb la finalització del projecte (comprovar que satisfà les necessitats, resoldre contractes, traspassar el programari a l'equip d'operacions).
+
+Poden estar executades una després de l'altre, a l'hora o combinades de diferents maneres.
+
