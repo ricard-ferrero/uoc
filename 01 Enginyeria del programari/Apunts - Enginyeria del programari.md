@@ -94,7 +94,7 @@ Com que la qualitat obtinguda i el cost del desenvolupament són importants, org
 
 ## 1.3. L'àmbit de l'enginyeria del programari
 
-Mentres abans el programari es construia per a fer càlculs matemàtics (_computadra_), avui en dia el és una eina extesa a tot arreu (xarxes socials, sistemes d'informació, rellotges de polsera...). Per tant existeixen diferents tipus de programari ergo diferents maneres de desenvolupar-lo.
+Mentres abans el programari es construia per a fer càlculs matemàtics (_computadra_), avui en dia és una eina extesa a tot arreu (xarxes socials, sistemes d'informació, rellotges de polsera...). Per tant existeixen diferents tipus de programari ergo diferents maneres de desenvolupar-lo.
 
 **Classificació de Roger Pressman (2005):**
 - Programari de sistemes

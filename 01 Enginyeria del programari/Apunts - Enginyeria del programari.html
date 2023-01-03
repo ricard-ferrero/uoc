@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apunts - Enginyeria del programari.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<link rel="stylesheet" href="style.css">
+<header>
+    <p class="capçal">Apunts</p>
+    <h1 class="titol-assignatura">Enginyeria del programari</h1>
+</header>
+<div style="font-size: 0.8rem">
+<p>Tot el contingut són apunts i resums del Grau universitari &quot;Enginyeria Informàtica&quot; cursat en la Universitat Oberta de Catalunya.</p>
+<p>Per lo tant, els textos són extractes de la documentació que ofereix la universitat en les assignatures respectives i estan complementats amb documents d'altres pàgines webs informatives, d'altres llibres o amb conclusions personals.</p>
+</div>
+<h1 id="%C3%ADndex">Índex</h1>
+<ul>
+<li><a href="#modul-1">Mòdul 1: Introducció a l'enginyeria del programari</a>
+<ol>
+<li><a href="#1-qu%C3%A8-%C3%A9s-lenginyeria-del-programari">Què és l’enginyeria del programari?</a></li>
+<li><a href="#2-organitzaci%C3%B3-de-lenginyeria-del-programari">Organització de l’enginyeria del programari</a></li>
+<li>Mètodes de desenvolupament de programari</li>
+<li>Tècniques i eines de l’enginyeria del programari</li>
+<li>Estàndards de l’enginyeria del programari</li>
+</ol>
+</li>
+<li>Mòdul 2: Orientació a objectes
+<ol>
+<li>Què és l’orientació a objectes?</li>
+<li>Classificació i abstracció</li>
+<li>Ocultació d’informació i encapsulament</li>
+<li>Herència i polimorfisme</li>
+<li>Cas pràctic: un fòrum virtual</li>
+</ol>
+</li>
+<li>Mòdul 3: Requisits
+<ol>
+<li>Introducció als requisits</li>
+<li>Obtenció dels requisits</li>
+<li>Gestió de requisits</li>
+<li>Documentació dels requisits</li>
+<li>Casos d’ús</li>
+</ol>
+</li>
+<li>Mòdul 4: Anàlisi UML
+<ol>
+<li>Anàlisi orientada a objectes amb UML</li>
+<li>Model de casos d’ús</li>
+<li>Modelització de la interfície</li>
+<li>Model del domini</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h1 class="titol-modul" id="modul-1">Mòdul 1: Introducció a l'enginyeria del programari</h1>
+<h1 id="1-qu%C3%A8-%C3%A9s-lenginyeria-del-programari">1. Què és l'enginyeria del programari?</h1>
+<div class="aclaracio">
+<p><strong>Enginyeria:</strong> (<em>interpretació personal</em>) acció d'utilitzar els coneixements científics adequats per a conseguir solucionar problemes a trabés de la tecnologia.</p>
+<blockquote>
+<p>L'aplicació pràctica de la ciència i la tecnologia - <a href="https://ca.wikipedia.org/wiki/Enginyeria">Viquipèdia</a></p>
+</blockquote>
+<blockquote>
+<p>Art d'aplicar els coneixements científics a la invenció, al perfeccionament o a la utilització de les tècniques en totes llurs determinacions dins el camp industrial. - <a href="https://www.enciclopedia.cat/gran-enciclopedia-catalana/enginyeria">Gran Enciclopèdia Catalana</a></p>
+</blockquote>
+</div>
+<h2 id="11-programari-i-maquinari">1.1. Programari i maquinari</h2>
+<p><strong>Programari:</strong> La part intangible de qualsevol ordinador: tant les dades emmagatzemades com el conjunt d'accions a executar (<em>codi</em>).</p>
+<blockquote>
+<p>Conjunt dels programes de computació, procediments, regles, documentació i dades associades que formen part de les operacions d'un sistema de còmput - IEEE</p>
+</blockquote>
+<div class="aclaracio">
+<blockquote>
+<p><strong>IEEE</strong> són les sigles de <em>Institute of Electrical and Electronics Engineers</em>, l'Institut d'Enginyers Elèctrics i Electrònics, una associació tècnico-professional mundial dedicada a l'estandardització, entre altres coses. És la major associació internacional sense ànims de lucre formada per professionals de les noves tecnologies, com enginyers en informàtica, enginyers elèctrics, enginyers en electrònica, enginyers en sistemes i enginyers en telecomunicació. - <a href="https://ca.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers">Viquipèdia</a></p>
+</blockquote>
+</div>
+<p><strong>Maquinari:</strong> La part física de l'ordinador (components electrònics) que permet l'execusió d'instruccions (càlculs) del <em>programari</em>.</p>
+<h2 id="12-el-desenvolupament-de-programari">1.2. El desenvolupament de programari</h2>
+<blockquote>
+<p><strong>Desenvolupament de programari</strong> l'acte de produir o crear programari.</p>
+</blockquote>
+<p><strong>Codi màquina:</strong> llista d'instruccions que l'ordinador pot entendre i executar directament. El codi màquina no és llegible per a les persones, i les instruccions són poques i molt senzilles com per a utilitzar-les per construir programes complexos d'una manera clara per a l'home.</p>
+<p><strong>Llenguatge de programació:</strong> eina que s'utilitzar per programar que permet escriure instruccions a un nivell d'abstracció més elevat, amb instruccions compostes i més complexes. Aquest desrpés es transforma en codi màquina per a ser exectutat.</p>
+<blockquote>
+<p><strong>Codi font:</strong> la manera llegible en què s'escriu el programari</p>
+</blockquote>
+<hr>
+<p>L'objectiu del programari és cobrir unes necessitats en concret, ja siguin d'un client (o organització), un determinat grup d'usuaris o per a ús personal; pot ser venut o simplement oferit gratuïtament.</p>
+<p><em>Desenvolupament del programari</em> és un concepte molt més ampli a simplement programar (creació de codi font), ja que també recull moltes altres activitats, com per exemple:</p>
+<ul>
+<li>estudi i documentació de les necessitats dels usuaris</li>
+<li>manteniment del programari</li>
+<li>coordinació del treball en equip</li>
+<li>redacció de manuals/ajudes a usuaris</li>
+<li>etc...</li>
+</ul>
+<p>Com que la qualitat obtinguda i el cost del desenvolupament són importants, organitzacions i empreses han convertit aquestes activitats en una <em>enginyeria</em>.</p>
+<h2 id="13-l%C3%A0mbit-de-lenginyeria-del-programari">1.3. L'àmbit de l'enginyeria del programari</h2>
+<p>Mentres abans el programari es construia per a fer càlculs matemàtics (<em>computadra</em>), avui en dia és una eina extesa a tot arreu (xarxes socials, sistemes d'informació, rellotges de polsera...). Per tant existeixen diferents tipus de programari ergo diferents maneres de desenvolupar-lo.</p>
+<p><strong>Classificació de Roger Pressman (2005):</strong></p>
+<ul>
+<li>Programari de sistemes</li>
+<li>Programari d'aplicació</li>
+<li>Programari científic i d'enginyeria</li>
+<li>Programari encastat</li>
+<li>Programari de línies de productes</li>
+<li>Aplicacions web</li>
+<li>Programari d'intel·ligència artificial</li>
+</ul>
+<p>Les categories no són excloents i és habituall que s'hagi de desenvolupar programari que pertanyi a varies d'elles.</p>
+<p>En aquesta assignatura ens centrarem només en una categoria: <em>programari d'aplicació desenvolupat a mida</em>, concretament:</p>
+<blockquote>
+<p><strong>Programari per a sistemes d'informació</strong>: qualsevol combinació de tecnologia de la informació i activitats humanes que utilitzen aquesta tecnologia per a donar suport a l'operació, gestió o presa de decisions.</p>
+</blockquote>
+<p>El programari per a sistemes d'informació gestiona certa informació mitjantçant una <em>base de dades</em> i dóna suport a una sèrie d'activitats humanes dins del context d'un <em>sistema d'informació</em>.</p>
+<p class="aclaracio">
+Un sistema d'informació no és un sistema informàtic. Aquest poden ser, per exemple, un conjunt d'albarans escrits a mà, o també pot estar format per un sistema informàtic de gestió de comandes.
+</p>
+<h2 id="14-qu%C3%A8-%C3%A9s-lenginyeria-del-programari">1.4. Què és l'enginyeria del programari?</h2>
+<blockquote>
+<p><strong>Enginyeria</strong>: l'aplicació d'un enfocament sistemàtic, disciplinat i quantificable a les estructures, màquines, productes, sistemes o processos per a obtenir un resultat esperat - IEEE</p>
+</blockquote>
+<blockquote>
+<p><strong>Engiyeria del programari</strong>: l'aplicació d'un enfocament sistemàtic, disciplinat i quantificable al desnvolupament, operació i manteniment del programari; és a dir, l'aplicació de l'enginyeria al programari - IEEE</p>
+</blockquote>
+<p><strong>Desenvolupament</strong>: procés que porta a la producció del programari.</p>
+<p><strong>Operació</strong>: execució del programari dins del seu entorn d'execució per tal de dur a terme la seva funció.</p>
+<p><strong>Manteniment</strong>: modificació del producte de programari per tal de corregir-ne els errors o bé adaptar-lo a noves necessitats.</p>
+<p>En l'enginyeria del programari s'han de dur a terme totes aquestes activitats i així poder <em>mesurar, quantificar i analitzar</em> els diferents processos relacionats amb la vida del producte de programari.</p>
+<p>Això ens permet extreure conclusions aplicables a futurs projectes de programari. <em>Quins recursos són necessaris per un nou programari? Quant de temps caldria per afegir una nova funcionalitat? Quins riscos podem trobar?</em></p>
+<h2 id="15-hist%C3%B2ria-de-lenginyeria-del-programari">1.5. Història de l'enginyeria del programari</h2>
+<p>En l'inici del programari es feia com un producte gratuït inclòs en la compra del maquinari i fabricat pels mateixos fabricants del maquinari. No hi havia el concepte de <em>programari empaquetat</em> com aproducte.</p>
+<p><strong>No</strong> hi havia planificació ni predicció de costos i temps. Però <strong>sí</strong> hi havia tècniques de reutilització (programació modular).</p>
+<p>En el comitè científic de l'OTAN, octubre 1968, va definir formalment el terme <em>enginyeria del programari</em>.</p>
+<p>En la conferència de l'OTAN es va parlar de la <em>crisi del programari</em>: la dificultat d'escriure programari correcte, entenedor i verificable, i que tenia com a conseqüencia la dificultat de planificar els costos del projecte, els plaços de termini, problemes amb la qualitat, etc...</p>
+<p><strong>Informe Chaos</strong> (Standish Group, 1995) estudi sobre desenvolupament de programari a EUA, i exposava que:</p>
+<ul>
+<li>90% de projectes no complien amb els requisits de temps, cost o qualitat</li>
+<li>31% de projectes eren cancel·lats</li>
+<li>només 16% de projectes acabaven en el temps, pressupost i abast planificats</li>
+</ul>
+<p>Durant dècades, es va intentar solucionar la crisi del programari inventant eines, tecnologies i pràctiques. No es va poguer solucionar de manera definitiva els problemes però sí algunes millores.</p>
+<p><strong>&quot;No Silver Bullet&quot;</strong> (Fred Brooks, 1986) és un article on s'explica que no hi ha una solució única (<em>perfecte, màgica</em>) per al problema, i per molt que s'investigui en tecnologia o gestió no es pot aconseguir gaires millores d'un ordre de magnitud en productivitat, fiabilitat o simplicitat, com a mínim en una dècada (a diferència del maquinari que es millora en dos ordres de magnitud cada dos anys).</p>
+<p>La causa de les afirmacions de Brooks era que les millores que per aquell llavors s'estaven aconseguint podien pal·liar la complexitat accidental però no la complexitat essencial (la inherent al desenvolupament de programari).</p>
+<p>Als 90' Internet va provocar un creixement molt ràpid en demanda de programari especialitzat (sobretot en la Web). Això va generar la necessitat de solucions de programari més simples, ràpides de desenvolupar i econòmiques.</p>
+<p>L'informe Chaos de 2009 mostra la següent evolució en els projectes entre 1994 i 2009:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right"></th>
+<th style="text-align:center">1994</th>
+<th style="text-align:center">2009</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">reixits</td>
+<td style="text-align:center">16%</td>
+<td style="text-align:center">32%</td>
+</tr>
+<tr>
+<td style="text-align:right">cancel·lats</td>
+<td style="text-align:center">31%</td>
+<td style="text-align:center">24%</td>
+</tr>
+</tbody>
+</table>
+<p>Se segueix creient que no existeixen solucions màgiques i se segueixen buscant solucions. Algunes d'aquestes <em>que veurem en aquesta assignatura</em> són:</p>
+<ul>
+<li>línies de producte</li>
+<li>desenvolupament guiat per models</li>
+<li>patrons o metodologies àgils de desenvolupament</li>
+</ul>
+<h2 id="16-lenginyeria-del-programari-comparada-amb-les-altres-enginyeries">1.6. L'enginyeria del programari comparada amb les altres enginyeries</h2>
+<p>Si s'aplica l'enginyeria al desenvolupament de programari es poden aprofitar els coneixements d'altres disciplines de l'enginyeria per millorar la manera en què gestionem aquestes activitats.</p>
+<p>Així doncs s'han aplicat diferents metàfores per intentar taslladar els coneixements a la nostra disciplina. Però un dels perills de les metàfores és que, sovint, s'apliquen amb coneixements incomplets de partida, i pot portar a errors al traslladar els coneixements.</p>
+<p class="aclaracio">
+No existeix un trasllat absolut de coneixements i pràctiques entre disciplines.
+</p>
+<div class="exemple">
+<p><strong>Exemple</strong>:</p>
+<p>L'arquitecta crea plànols que han d'estar llestos abans de començar la construcció. Els paletes són intercaviables (les instruccions a seguir són clares). Un cop finalitzada la feina el client pot contractar altres paletes pel manteniment.</p>
+<p>Però no es té en compte factors com: l'edifici es construeix al mateix lloc on es farà servir, mentres que el programari no; el programari de qualitat s'ha de poder fer servir en entorns diferents; el cost de fer còpies del programari és gairabé nul comparat amb el cost del disseny.</p>
+</div>
+<p><strong>Diferències destacables</strong> entre el programari i altres productes industrials:</p>
+<ol>
+<li><strong>El programari és intangible</strong>. No utilitza cap matèria prima física.</li>
+<li><strong>El programari no es manufactura</strong>. Crear-ne còpies té un cost quasi nul i el resultat de les còpies sempre és idèntic a l'original.</li>
+<li><strong>El programari no es desgasta</strong>. El tipus de manteniment és molt diferent ja que si una còpia falla no pot ser per desgast i per lo tant tota la resta de còpies també fallaran.</li>
+<li><strong>El programari queda obsolet ràpidament</strong>. La ràpida evolució tecnològica fa que quedi obsulet en poc temps a diferència d'altres disciplines industrials. Força a desenvolupar-ho amb poc temps i poc cost.</li>
+</ol>
+<p>A més, cal destacar que l'enginyeria del programari és una disciplina relativament nova (comparada amb la resta d'enginyeries). L'experiència acumulada és relativament poca i aquest fet es veu agreujat per la ràpida evolució tecnològica, fonamentalment en dos eixos:</p>
+<ul>
+<li>Les noves possibilitats tecnològiques fan que canviï totalment la naturalesa dels productes que estem desenvolupant (per exemple l'aparició d'interficies gràfiques, d'Internet i/o els telèfons intel·ligents).</li>
+<li>L'augment de la potència de càlcul dels ordinadors provoca canvis fonamentals en les eines que es fan servir per desenvolupar programari (tant pels llenguatges i paradigmes com eines mateixes -entorns de desenvolupament, eines CASE...-)</li>
+</ul>
+<blockquote>
+<p>Les <strong>eines CASE</strong> (<em>computer aided software engineering</em>) són les eines que ens ajuden a dur a terme les diferents activitats de l’enginyeria del programari com ara la creació de models, generació de documentació, etc.</p>
+</blockquote>
+<p>Per lo tant la majoria de coneixement queda obsolet ja que es va crear per solucionar problemes en un context diferent del que ens podem trobar avui en dia.</p>
+<p>El <strong>programari lliure</strong> ha transformat totalment la manera de desenvolupar i mantenir el programari i ha promogut la creació d'estàndards, la reutilització de programari i a la difusió del coneixement respecte a com ha estat desenvolupat. Aquest nivell de transparència i col·laboració no existeix en cap altra enginyeria.</p>
+<h1 id="2-organitzaci%C3%B3-de-lenginyeria-del-programari">2. Organització de l'enginyeria del programari</h1>
+<p><strong>Mètodes de desenvolupament</strong>: són els diferents mètodes definits que ens permet aplicar l'enginyeria a les activitats relacionades amb el programari, siguent sistemàtic, amb el desenvolupament, operació o manteniment (o una combinació de tots tres),</p>
+<blockquote>
+<p>Un mètode descriu les característiques del procés o procediment disciplinat utilitzat en l'enginyeria d'un producte o en la prestació d'un servei - IEEE</p>
+</blockquote>
+<h2 id="21-organitzaci%C3%B3-del-desenvolupament-operaci%C3%B3-i-manteniment">2.1. Organització del desenvolupament, operació i manteniment</h2>
+<p>Els processos de desenvolupament, d'operació i de manteniment poden tenir similituds, però les seves diferències fan que l'organització dels processos siguin molt diferents entre ells:</p>
+<p>En el cas de l'operació les activitats són contínues, però el desenvolupament és temporal.</p>
+<p>Les activitats de l'operació són repetitives, però el desenvolupament proporciona un resultat únic (un resultat per cada procés de desenvolupament).</p>
+<blockquote>
+<p>Mentre que el desenvolupament s'acostuma a organitzar en forma de projectes, l'operació s'organitza d'acord amb serveis.</p>
+</blockquote>
+<p>Molts mètodes se centren en una única activitat de les tres mencionades. En aquest temari ens centrarem en les etapes de desenvolupament i manteniment.</p>
+<div class="aclaracio">
+<p class="capçal">Lectures recomenades</p>
+Si voleu aprofundir en la gestió de projectes, podeu consultar la guia PMBOK publicada pel Project Management Institute (PMI), mentre que si us interessa la gestió de l’operació del programari podeu consultar l’estàndard ITIL.
+</div>
+<h2 id="22-organitzaci%C3%B3-dels-projectes-de-desenvolupament">2.2. Organització dels projectes de desenvolupament</h2>
+<p>Els diferents mètodes per al desenvolupament del programari defineixen un o més processos de desenvolupament. La descripció d'un procés inclou:</p>
+<ul>
+<li><strong>Tasques</strong>: quines fer i en quin ordre.</li>
+<li><strong>Rols</strong>: dels diferents participants, quina responsabulitat tenen i quines tasques han de dur a terme.</li>
+<li><strong>Artefactes</strong>: documents, programes, etc. que s'han de fer servir per cada tasca, i quins artefactes s'han de generar com a resultat.</li>
+</ul>
+<p>Els criteris per escollir els processos definits per un mètode es basen en el seu abast (només al desenvolupament o també altres espectes), el tipus d'organització al que va dirigit, el tipus de producte a generar, entre d'altres...</p>
+<h2 id="23-activitats-de-lenginyeria-del-programari">2.3. Activitats de l'enginyeria del programari</h2>
+<p>Hi ha un seguit de tasques que coincidiran en tots els projectes de desenvolupament amb independencia de com s'organitzi.</p>
+<p><strong>Activitat</strong>: en aquest temari farem referència a <em>activitat</em> com a un conjunt de tasques relacionades entre si. Les tasques són conceptes més concrets i que poden diferenciar molt entre projectes (generar un model conceptual, crear un diagrama de Gantt...), mentre que les activitats són més genèriques i coincideixen entre projectes (modlització, planificació...).</p>
+<h3 id="231-gesti%C3%B3-del-projecte">2.3.1. Gestió del projecte</h3>
+<blockquote>
+<p>L'objectiu prinipal de la <strong>gestió de projectes</strong> és assegurar l'èxit del projecte</p>
+</blockquote>
+<p>La gestió del projecte no és una activitat específica del desenvolupament del programari, i per això hi ha qui considera que no forma part de l'enginyeria del programari. Però forma part del projecte de desenvolupament i, per tant, els mètodes de desenvolupament l'han de tenir en compte.</p>
+<p>Algunes tasques reslacionades amb la gestió del projecte:</p>
+<ul>
+<li><strong>Estudi de viabilitat</strong>. Cal comprovar si per qüestions de cost i temps el projecte de desenvolupament és la millor solució</li>
+<li><strong>Estimació</strong>. Temps i diners</li>
+<li><strong>Definir clarament els objectius del projecte</strong>. En determinaran l'èxit o el fracàs.</li>
+<li><strong>Formar l'equip de desenvolupament</strong>. Persones amb dedicació completa (desenvolupadors) o parcial(<em>stakeholders</em>)</li>
+<li><strong>Establir fites</strong>. Permeten fer-ne un seguiment del procés.</li>
+<li><strong>Identificar riscos que puguin posar en perill el projecte</strong>. Tant tecnològics com la resta de possibilitats (problemes legals, manca de suport de l'organització...)</li>
+</ul>
+<div class="aclaracio">
+<p class="capçal">Stakeholder</p>
+Qualsevol persona o organització interessada, afectada o implicada en el funcionament del programari que es desenvolupa.
+</div>
+<p>La gestió del projecte variarà notablement segons el mètode de desenvolupament emprat.</p>
+<p><strong>Podem resumir que la gestió del projecte consisteix en equilibrar tres variables</strong></p>
+<ol>
+<li>l'abast del projecte (què inclourà i què no)</li>
+<li>el temps (data final d'entrega)</li>
+<li>el cost (recursos humans o materials)</li>
+</ol>
+<p>La modificació d'una de les tres variables s'ha de comepensar modificant una de les altres dues.</p>
+<blockquote>
+<p><strong>Joc de suma zero</strong>: En teoria de jocs, un joc de suma zero descriu una situació en què el guany o la pèrdua en què incorre un dels participants es compensa exactament per les pèrdues o guanys de la resta de participants. Així doncs, si sumem totes les pèrdues i tots els guanys, el resultat final és 0.</p>
+</blockquote>
+<div class="aclaracio">
+<p class="capçal">Altres variables</p>
+Wysocki (2009) afageix qualitat com a variable i distingeix entre cost (pressupost) i recursos (personal).
+</div>
+<h3 id="232-identificaci%C3%B3-i-gesti%C3%B3-dels-requisits">2.3.2. Identificació i gestió dels requisits</h3>
+<blockquote>
+<p>Els requisits expressen les necessitats i restriccions que afecten un producte de programari que contribueix a la solució d'un problema del món real - SWEBOK (2004)</p>
+</blockquote>
+<p>Per trobar-los cal comunicació i col·laboració amb els <em>stakeholders</em>.</p>
+<p>Els requisits són el que determinen l'abast del projecte.</p>
+<p>Les principals problemàtiques que ens podem trobar durant aquesta tasca són:</p>
+<ul>
+<li><strong>Diferències respecte a la informació amb què traballen les diferents parts</strong>. <em>Stakeholders</em> tenen una informació (referent al producte) i els desenvolupadors una altra (referent a la tencologia). Això pot generar perspectives diferents.</li>
+<li><strong>Limitacions del canal utilitzat</strong>. Cada canal té pros i contras: comunicació escrita perd el llegunatge no verbal, mentre que si és verbal es perd la capacitat de revisió.</li>
+<li><strong>Limitacions del llenguatge utilitzat</strong>. Llenguatge natural és propens a l'ambigüitat. Els llenguatges formals són menys expressius i necessiten que les dues parts l'entenguin.</li>
+<li><strong>Dificultat de definir el millor sistema possible</strong>. <em>Stakeholders</em> poden no acabar de comunicar els requisits del millor sistema possible (condicionats per altres sistemes que coneixen o no saber altres possibilitats).</li>
+</ul>
+<p class="aclaracio">Els problemes són generats per les complicacions durant la comunicació amb els <em>stakeholders</em>, i no pas per la naturalesa de l'enginyeria en sí.</p>
+<p>Per a solucionar aquests problemes s'usen tècniques basades en retroalimentació durant l'anlàlisi de requisits.</p>
+<p>Per exemple: el prototipatge (ensenyar una versió amb aspecte similar al producte final però que no implementa la funcionalitat real) o els models (la seva utilitat està condicionada a que els <em>stakeholders</em> entenguin lal notació).</p>
+<h3 id="233-modelitzaci%C3%B3">2.3.3. Modelització</h3>
+<p><strong>Creació de models el sistema per desenvolupar</strong>: facilitaran la comprensió dels requisits i el disseny del sistema.</p>
+<p>És l'equivalent a la creació de maquetes en altres disciplines, amb la diferència que en aquest cas el model és intangible (com el producte final).</p>
+<p><strong>UML</strong> (<em>unified modeling language</em>) és el llenguatge més utilitzat per a creació de models de programari. Defineix tot un seguit de diagrames a partir dels quals podem elaborar els nostres models. Publicat per OMG (Object Management Group)</p>
+<p>UML no imposa cap mètode de desenvolupament, i per això s'ha adoptat a la majoria de mètodes de desenvolupament actuals. També té l'avantatge que només defineix la notació que s'ha de fer servir però no quins artefactes s'han de generar (un mateix diagrama es pot fer servir en diversos artefactes -model de domini, diagrama de classes de disseny, etc...)</p>
+<h3 id="234-construcci%C3%B3-i-proves">2.3.4. Construcció i proves</h3>
+<p>Inclou l'escriptura del codi font (implementació) i la realització de proves que garanteixin que ni hi hagi errors i que el producte compleixi amb els seus requisits.</p>
+<p>Llavors podríem <strong>desplegar</strong> el producte: crear els arxius executables i donar-los als usuaris.</p>
+<h3 id="235-qualitat">2.3.5. Qualitat</h3>
+<p>Seria una activitat que inclouria totes les etapes del desenvolupament.</p>
+<p>Per medir la qualitat necessitem, a part de els criteris d'acceptació del sistema (què necessita el projecta per dir que està finalitzat), un conjunt de mètriques per verificar si compleix amb els criteris de qualitat marcats.</p>
+<h3 id="236-manteniment-reenginyeria">2.3.6. Manteniment reenginyeria</h3>
+<p><strong>Manteninemt correctiu</strong>: corregir errors detectats al programari, modificant el codi font i generant una nova versió del programa.</p>
+<p><strong>Manteniment evolutiu</strong>: afegir noves funcionalitats (o adaptar les existents) per satisfer noves necessitats detectades després de la fi del desenvolupament.</p>
+<h3 id="237-activitats-des-del-punt-de-vista-del-cicle-de-vida-del-projecte">2.3.7. Activitats des del punt de vista del cicle de vida del projecte</h3>
+<p>El <em>Project Management Institute</em> (associació professional que publica estàndards de bones pràctiques en la gestió de projectes) fa una classifiació diferent, es fixa en la gestió del projecte i en quin punt del cicle de vida es du a terme cada tasca:</p>
+<ul>
+<li><strong>Tasques d'iniciació</strong>. Decidir si el projecte es du a terme o se substitueix per una altra solució</li>
+<li><strong>Tasques de planificació</strong>. Definir quines tasques fer i en quin ordre.</li>
+<li><strong>Tasques d'execució</strong>. Escriure els programes.</li>
+<li><strong>Tasques de seguiment i control</strong>.  Serveixen per detectar problemes i corregir-los, així com validar la planificació.</li>
+<li><strong>Tasques de tancament</strong>. Tot lo relacionat amb la finalització del projecte (comprovar que satisfà les necessitats, resoldre contractes, traspassar el programari a l'equip d'operacions).</li>
+</ul>
+<p>Poden estar executades una després de l'altre, a l'hora o combinades de diferents maneres.</p>
+<h2 id="24-rols-en-lenginyeria-de-programari">2.4. Rols en l'enginyeria de programari</h2>
+<p>En els projectes intervenen moltes persones, i una bona definició de rols pot ser determinant per arribar a l'èxit del projecte.</p>
+<p>Els rols que hi hauran en un mètode dependran del seu abast. No tots els mètodes tindran els mateixos rols.</p>
+<div class="aclaracio"><p class="capçal">Lectura recomenada</p>
+<p><strong>Tom DeMarco; Timothy Lister</strong> (1999). Peopleware: productive Projects and Teams (2a. ed.). Dorset House Publishing Company.</p>
+</div>
+<ul>
+<li>El cap de projectes</li>
+<li>Els experts del domini</li>
+<li>L'analista funcional</li>
+<li>L'arquitecte</li>
+<li>L'analista orgànic o analista tècnic</li>
+<li>Els programadors</li>
+<li>L'expert de qualitat (provador)</li>
+<li>L'encarregat del desplegament</li>
+<li>El responsable de producte</li>
+<li>Altres rols</li>
+</ul>
+<h3 id="241-el-cap-de-projectes">2.4.1. El cap de projectes</h3>
+<blockquote>
+<p>El cap de projectes és la persona responsable d'aconseguir els objectius del projecte.</p>
+</blockquote>
+<p>És un rol no tècnic encarregat d'organitzar el projecte, coordinar l'equip i vetllar pels objectius (tant de costos com de valor generat).</p>
+<h3 id="242-els-experts-del-domini">2.4.2. Els experts del domini</h3>
+<p>Persones que coneixen el domini del sistema que s'està desenvolupant, els principals coneixedors dels requisits. Normalment no són tècnics sinó experts d'altres coneixements (vendes, finances, producció, etc).</p>
+<p>Aquest rol també és conegut com a &quot;analista de negoci&quot; (<em>business analyst</em>).</p>
+<h3 id="243-lanalista-funcional">2.4.3. L'analista funcional</h3>
+
+</body>
+</html>
