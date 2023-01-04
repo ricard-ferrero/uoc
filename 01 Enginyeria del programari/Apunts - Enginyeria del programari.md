@@ -100,7 +100,7 @@ Mentres abans el programari es construia per a fer càlculs matemàtics (_comput
 - Programari de sistemes
 - Programari d'aplicació
 - Programari científic i d'enginyeria
-- Programari encastat
+- Programari encastat (_sistema embebido_)
 - Programari de línies de productes
 - Aplicacions web
 - Programari d'intel·ligència artificial
