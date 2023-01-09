@@ -369,7 +369,7 @@ Els rols que hi hauran en un mètode dependran del seu abast. No tots els mètod
 
 ### 2.4.1. El cap de projectes
 
->El cap de projectes és la persona responsable d'aconseguir els objectius del projecte.
+Responsable d'aconseguir els objectius del projecte.
 
 És un rol no tècnic encarregat d'organitzar el projecte, coordinar l'equip i vetllar pels objectius (tant de costos com de valor generat).
 
@@ -380,4 +380,28 @@ Persones que coneixen el domini del sistema que s'està desenvolupant, els princ
 Aquest rol també és conegut com a "analista de negoci" (_business analyst_).
 
 ### 2.4.3. L'analista funcional
+
+Pèrfil tècnic. Ha d'unificar les diferents visions del domini en un únic model.
+
+A diferència dels experts del domini, sí ha de conèixer la tecnologia, encara que no en conegui els detalls.
+
+### 2.4.4. L'arquitecte
+
+Rol tècnic. Ha de definir el disseny del sistema i escollir la tecnologia adequada. Amb la informacuió que li doni l'analista, crearà l'arquitecutra i el disseny que serà utilitzat com a base pel treball dels desenvolupadors.
+
+### 2.4.5. L'analista orgànic o analista tècnic
+
+Fa el disseny detallat del sistema (respectant la feina de l'arquitecte). El destinatari de la seva feina és el programador.
+
+### 2.4.6. Els programadors
+
+Escriuen el codi font amb els que es generaran els programes. Experts en la tecnologia d'implementació. També s'inclou a altres especialistes que participen creant codi pel programa (encara que no sigui amb un llenguatge de programació), com els especialistes en bases de dades.
+
+### 2.4.7. L'expert de qualitat (provador)
+
+Vetlla per la qualitat del producte desenvolupat. No és qui comprova la qualitat del codi font (d'això s'encarreguen els programadors amb les proves automàtitzades), sinó que s'encarrega d'opinar sobre el producte final.
+
+Verifica que el programa compleix amb els requisits, i és qui decideix si el programa podrà acabar en mans dels usuaris finals.
+
+### 2.4.8. L'encarregat del desplegament
 
