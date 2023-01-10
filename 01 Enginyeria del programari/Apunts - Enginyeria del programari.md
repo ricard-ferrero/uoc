@@ -208,6 +208,8 @@ Per lo tant la majoria de coneixement queda obsolet ja que es va crear per soluc
 
 El **programari lliure** ha transformat totalment la manera de desenvolupar i mantenir el programari i ha promogut la creació d'estàndards, la reutilització de programari i a la difusió del coneixement respecte a com ha estat desenvolupat. Aquest nivell de transparència i col·laboració no existeix en cap altra enginyeria.
 
+
+
 # 2. Organització de l'enginyeria del programari
 
 **Mètodes de desenvolupament**: són els diferents mètodes definits que ens permet aplicar l'enginyeria a les activitats relacionades amb el programari, siguent sistemàtic, amb el desenvolupament, operació o manteniment (o una combinació de tots tres),
@@ -405,3 +407,18 @@ Verifica que el programa compleix amb els requisits, i és qui decideix si el pr
 
 ### 2.4.8. L'encarregat del desplegament
 
+Encarregat d'empaquetar i enviar el programari un cop estigui finalitzat el seu procés de desenvolupament (validat i tot).
+
+### 2.4.9. El responsable de producte
+
+Té la visió global del producte que es vol desenvolupar i vetlla pel seu desenvolupament correcte. No ha de ser expert en el domini però sí que ha de conèixer l'estrategia d'organització.
+
+### 2.4.10. Altres rols
+
+Els rols que hi hagi en un projecte dependrà molt del mètode aplicat, i per lo tant podrien haver-hi atres rols (o menys rols).
+
+Hi ha altres persones influents al projecte que no formen part de l'equip de desenvolupament (cap de desenvolupament, director general de l'organització, etc).
+
+
+
+# 3. Mètodes de desenvolupament de programari
