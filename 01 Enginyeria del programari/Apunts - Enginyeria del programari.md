@@ -422,3 +422,8 @@ Hi ha altres persones influents al projecte que no formen part de l'equip de des
 
 
 # 3. Mètodes de desenvolupament de programari
+
+> El mètode de desenvolupament definirà un cicle de vida, quins processos, activitats i tasques tenen lloc a les diferents etapes del cicle de vida, qui s'encarregarà de dyr a terne cadascyba de les tasques i també la interacció entre tasques, rols i persones.
+
+## 3.1. Història dels mètodes de desenvolupament
+
