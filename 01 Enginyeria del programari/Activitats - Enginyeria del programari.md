@@ -62,3 +62,7 @@ Els "tipus de programari" es classifiquen, segons Roger Pressman (2005) de la se
     Programari encastat
 - **j) El programari de reconeixement de la parla**  
     Programari d'intel·ligència artifical
+
+
+## 3. Doneu dos arguments a favor i dos arguments en contra del fet de tractar el desenvolupament del programari com una disciplina d'enginyeria.
+
