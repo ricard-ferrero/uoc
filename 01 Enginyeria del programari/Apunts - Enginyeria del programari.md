@@ -427,3 +427,67 @@ Hi ha altres persones influents al projecte que no formen part de l'equip de des
 
 ## 3.1. Història dels mètodes de desenvolupament
 
+A partir dels 50' s'ha estudiat molt la gestió de projectes, generant molts models diferents de gestió. Avui dia, el més difós és el _Project Management Institut_ (PMI).
+
+Una de les primeres metàfores va ser la gestió científica (_scientific management_, Frederik Taylor s.XIX). Es divideix el procés industrial en petites tasques més senzilles i repetitives, dutes a terme per un especialista. Un exemple n'és la cadena de producció.
+
+Imitar la gestió científica va donar lloc al **cicle de vida en cascada**.
+
+Un altre mètode que va surtir en la indústria va ser el mètode de producció Toyota (dóna lloc al _lean-manufacturing_). Es basa en dos principis:
+
+- _Jidoka_: evitar produir productes defectuosos
+- _Just-in-time_: produir tant sols els productes necessaris per l'etapa següent (no acumular estocs)
+
+En el desenvolupament del programari va donar lloc al ***lean software development***.
+
+Cusumano al 2003 va fer un estudi que va demostrar que els mètodes basats en l'obtenció d'informació sobre un mètode real i l'adaptació al canvi poden aconseguir una taxa de defectes similars als que es basen en la planificació i descomposició del problema, i a més s'adapten millor als canvis dels usuaris.
+
+**SEMAT** (_softare engineering method and theory_) és un grup format per diferents especialistes al 2009 i tenen la finalitat d'unificar el camp de l'enginyeria del programari.
+
+El seu manifest diu:
+
+>L'enginyeria del programari està greument dificultada avui dia per pràcitques immadures. Els problemes inclouen:
+> - La prevalença de modes passatgeres més típiques de la industria de la moda que d'una disciplina de l'enginyeria.
+> - La manca d'una base teòrica sòlida i àmpliament acceptada.
+> - L'enorme nombre de mètodes i variants de mètodes, amb diferències pobrament compreses i magnificades artificialment.
+> - La manca d'avaluació i validació experimental creïble.
+> - La separació entre la pràctica en la indústria i la recerca científica.
+
+## 3.2. Classificació dels mètodes de desenvolupament
+
+Alguns dels factors que es fan servir per classificar els projectes són (Wysocki, 2009):
+
+- risc
+- valor de negoci
+- durada
+- complexitat
+- tecnologia utilitzada
+- nombre de departaments afectats
+- cost
+
+|  | Solució coneguda | Solució poc coneguda |
+| :---: | :---: | :---: |
+| **Objectiu clar** | 1 | 2 |
+| **Objectiu poc clar** | 3 | 4 |
+
+<div class="aclaracio">
+
+Grup 1: objectius clars i sabem com s'ha de fer. Podem triar mètodes amb poca tolerància al canvi però senzills d'aplicar.
+
+Grup 2: coneixemt l'objectiu però com solucionaro. Mètodes que siguin tolerants al canvi. Avui dia la majoria de projectes pertanyen a aquest grup.
+
+Grup 3: coneixem la solució però no sabem on aplicar-la encara (o en quin projecte aplicar-la). Caldria buscar a on encaixaria més el tipus de solució.
+
+Grup 4: projectes de recerca. Flexibles al canvi tant en solució com a problema, ja que an la investigació els objectius poden canviar.
+
+</div>
+
+Els projectes de desenvolupament acostumen a tenir un objectiu força clar, són dels grups 1 o 2.
+
+En aquest temari classificarem els projectes en tres grans famílies:
+
+- Cicle de vida en cascada (adequat per tipus 1)
+- Mètodes iteratius i incrementals
+- Mètodes àgils (adequat per tipus 2)
+
+### 3.2.1. Cicle de vida clàssic o en cascada
